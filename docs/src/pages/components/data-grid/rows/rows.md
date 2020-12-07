@@ -103,8 +103,8 @@ const columns: ColDef = [{ field: 'name', sortable: false }];
 ### Server-side sorting
 
 By default, sorting works client-side.
-To switch it to server-side, set `sortingMode="server"`.
-Then you need to handle the `onSortModelChange` callback, sort the rows on the server-side, and update the `rows` prop with the newly sorted rows.
+To switch it to server-side, set `sortingMode="server"` and set `sortModel={sortModel}` to set the currently sorted field(s).
+Then you need to handle the `onSortModelChange` callback, sort the rows on the server-side, and update the `rows` and `sortModel` props with the newly sorted rows and sort fields.
 
 {{"demo": "pages/components/data-grid/rows/ServerSortingGrid.js", "bg": "inline"}}
 
