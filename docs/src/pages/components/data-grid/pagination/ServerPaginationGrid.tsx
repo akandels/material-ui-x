@@ -50,6 +50,7 @@ export default function ServerPaginationGrid() {
         rows={rows}
         columns={data.columns}
         pagination
+        page={page}
         pageSize={5}
         rowCount={100}
         paginationMode="server"
